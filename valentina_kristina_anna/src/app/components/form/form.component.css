@@ -1,0 +1,15 @@
+.form__wrapper {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #a1a1a1;
+}
+
+.form__container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submitButton {
+  margin-top: 20px;
+}

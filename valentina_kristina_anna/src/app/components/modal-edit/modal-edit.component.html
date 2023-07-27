@@ -1,0 +1,30 @@
+<div class="modal">
+  <div class="modal-content">
+    <button
+      type="button"
+      (click)="closeModal()"
+      class="btn-close btn--position"
+      aria-label="Close"
+    ></button>
+    <h2 class="modal__title">Edit your task</h2>
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        aria-describedby="button-addon2"
+        [(ngModel)]="taskContent"
+        required
+      />
+
+      <button
+        class="btn btn-outline-secondary text-primary"
+        type="button"
+        id="button-addon2"
+        (click)="onEdit(taskId, taskContent)"
+        [disabled]="taskContent.trim() === ''"
+      >
+        Edit task
+      </button>
+    </div>
+  </div>
+</div>
